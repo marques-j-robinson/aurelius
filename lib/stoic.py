@@ -8,7 +8,7 @@ def format_quote(req):
     body    = req['body']
     author  = req['author']
     source  = req['quotesource']
-    res = body + '\n'
+    res = '“' + body + '”\n'
     res += f'-{author}, {source}'
     return res
 
